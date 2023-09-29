@@ -5,7 +5,8 @@ function Navbar() {
     const navbarStyle = {
         background: "#0099ff", // Blue background color
         color: 'white', // White text color
-        fontSize: "20px"
+        fontSize: "20px",
+       
     };
     const buttonStyle = {
         background: 'white', // White background color
@@ -14,7 +15,7 @@ function Navbar() {
     };
 
     return (
-        <nav className="navbar navbar-expand-lg" style={navbarStyle}>
+        <nav className="navbar navbar-expand-lg " style={navbarStyle}>
             <div className="container-fluid">
                 <Link to="/" className="navbar-brand"style={navbarStyle}>
                     <h2 className="m-0">Make My Image</h2>
@@ -124,6 +125,7 @@ function Navbar() {
                     </ul>
                 </div>
             </div>
+            
         </nav>
     )
 }

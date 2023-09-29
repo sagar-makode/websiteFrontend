@@ -2,6 +2,8 @@ import React from 'react';
 import img from '../images/photo.png';
 import './Home.css'; // Import a CSS file to apply styling
 import { TypeAnimation } from 'react-type-animation';
+import HomeFormCard from './HomeFormCard';
+import Footer from './Footer';
 
 
 function Home() {
@@ -17,16 +19,16 @@ function Home() {
                     <TypeAnimation
                         sequence={[
                             // Same substring at the start will only be typed out once, initially
-                            'Make Your for Image',
+                            'Make Your Images Without losing quality',
                             1000,
                             // wait 1s before replacing "Mice" with "Hamsters"
-                            'Make Your for PDF',
+                            'Convert Your Images to PDF',
                             1000,
 
-                            'Make Your for File',
+                            'Make Your PDF Without losing quality',
                             1000,
 
-                            'Make You for news',
+                            'Convert Your PDF to Image',
                             1000,
 
                         ]}
@@ -45,38 +47,38 @@ function Home() {
 
 
             <div className='tools'>
-                <div className='overlay-container '>
-                    <div className="card" onClick={() => navigator('/editimage')}>
-                        <div className=" bg-light text-center p-4">
-                            <i className="fa fa-3x fa-image icon-color mb-4"></i>
-                            <h5 className="mb-3">Compress Image</h5>
+                <div className='overlay-container'>
+                    <div className="card " onClick={() => navigator('/editimage')}>
+                        <div className=" text-center p-3 ">
+                            <i className="fa fa-3x fa-image icon-color mb-2"></i>
+                            <h5 className="mb-1">Compress Image</h5>
                             <p className="m-0">Reduce Your Image Size Using This Tool</p>
                         </div>
                     </div>
                 </div>
                 <div className='overlay-container '>
-                    <div className="card" onClick={() => navigator('/editimage')}>
-                        <div className=" bg-light text-center p-4">
-                            <i className="fa fa-3x fa-object-group icon-color mb-4"></i>
-                            <h5 className="mb-3">Image to PDF</h5>
+                    <div className="card " onClick={() => navigator('/editimage')}>
+                        <div className="  text-center p-3">
+                            <i className="fa fa-3x fa-object-group icon-color mb-2"></i>
+                            <h5 className="mb-1">Image to PDF</h5>
                             <p className="m-0">Convert your Image To One PDF</p>
                         </div>
                     </div>
                 </div>
                 <div className='overlay-container'>
-                    <div className="card" onClick={() => navigator('/editimage')}>
-                        <div className=" bg-light text-center p-4">
-                            <i className="fa fa-3x fa-file-pdf-o icon-color mb-4"></i>
-                            <h5 className="mb-3">Compress PDF</h5>
+                    <div className="card " onClick={() => navigator('/editimage')}>
+                        <div className=" text-center p-3">
+                            <i className="fa fa-3x fa-file-pdf-o icon-color mb-2"></i>
+                            <h5 className="mb-1">Compress PDF</h5>
                             <p className="m-0">Reduce Your PDF Size Using This Tool</p>
                         </div>
                     </div>
                 </div>
-                <div className='overlay-container'>
-                    <div className="card" onClick={() => navigator('/editimage')}>
-                        <div className=" bg-light text-center p-4">
-                            <i className="fa fa-3x fa-object-ungroup icon-color mb-4"></i>
-                            <h5 className="mb-3">PDF To Image</h5>
+                <div className='overlay-container '>
+                    <div className="card " onClick={() => navigator('/editimage')}>
+                        <div className="  text-center p-3">
+                            <i className="fa fa-3x fa-object-ungroup icon-color mb-2"></i>
+                            <h5 className="mb-1">PDF To Image</h5>
                             <p className="m-0">Convert Your PDF To Image</p>
                         </div>
                     </div>
@@ -96,25 +98,25 @@ function Home() {
 
                     <ul>
                         <li>
-                            MahaDBT Scholership<span className='badge bg-danger mx-2'>
+                            MahaDBT Scholership<span className='badge bg-danger mx-2 blink'>
                                 New
                             </span>
                         </li>
 
                         <li>
-                            Kamgar Kalyan Scholership<span className='badge bg-danger mx-2'>
+                            Kamgar Kalyan Scholership<span className='badge bg-danger mx-2 blink'>
                                 New
                             </span>
                         </li>
 
                         <li>
-                            Cast Validity Application<span className='badge bg-danger mx-2'>
+                            Cast Validity Application<span className='badge bg-danger mx-2 blink'>
                                 New
                             </span>
                         </li>
 
                         <li>
-                            Badhakam kamgar Scholership <span className='badge bg-danger mx-2'>
+                            Badhakam kamgar Scholership <span className='badge bg-danger mx-2 blink'>
                                 New
                             </span>
                         </li>
@@ -124,8 +126,8 @@ function Home() {
             </div>
 
 
-            <div className='py-5' >
-                <div className='container py-5 px-lg-5'>
+            <div >
+                <div className='container  px-lg-5'>
                     <div className='text-center'>
                         <div>
                             <h4><span style={{ color: "red" }}>-- </span>Forms<span style={{ color: "red" }}> --</span></h4>
@@ -138,6 +140,18 @@ function Home() {
                 </div>
 
             </div>
+            <HomeFormCard/>
+            <Footer/>
+
+            
+
+
+
+
+
+
+
+
 
         </div>
     );
