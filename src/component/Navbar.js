@@ -41,7 +41,7 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/editimage" style={navbarStyle}>
+                            <NavLink className="nav-link" to="/compressimage" style={navbarStyle}>
                                 Edit Image
                             </NavLink>
                         </li>
