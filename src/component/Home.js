@@ -3,10 +3,12 @@ import img from '../images/photo.png';
 import './Home.css'; // Import a CSS file to apply styling
 import { TypeAnimation } from 'react-type-animation';
 import HomeFormCard from './HomeFormCard';
-import Footer from './Footer';
+
+import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
+    const navigate = useNavigate();
    
 
 
@@ -48,7 +50,7 @@ function Home() {
 
             <div className='tools'>
                 <div className='overlay-container'>
-                    <div className="card " onClick={() => navigator('/editimage')}>
+                    <div className="card " onClick={() => navigate('/compressimage')}>
                         <div className=" text-center p-3 ">
                             <i className="fa fa-3x fa-image icon-color mb-2"></i>
                             <h5 className="mb-1">Compress Image</h5>
@@ -57,7 +59,7 @@ function Home() {
                     </div>
                 </div>
                 <div className='overlay-container '>
-                    <div className="card " onClick={() => navigator('/editimage')}>
+                    <div className="card " onClick={() => navigate('/imagetopdf')}>
                         <div className="  text-center p-3">
                             <i className="fa fa-3x fa-object-group icon-color mb-2"></i>
                             <h5 className="mb-1">Image to PDF</h5>
@@ -66,7 +68,7 @@ function Home() {
                     </div>
                 </div>
                 <div className='overlay-container'>
-                    <div className="card " onClick={() => navigator('/editimage')}>
+                    <div className="card " onClick={() => navigate('/pdfcompressor')}>
                         <div className=" text-center p-3">
                             <i className="fa fa-3x fa-file-pdf-o icon-color mb-2"></i>
                             <h5 className="mb-1">Compress PDF</h5>
@@ -75,7 +77,7 @@ function Home() {
                     </div>
                 </div>
                 <div className='overlay-container '>
-                    <div className="card " onClick={() => navigator('/editimage')}>
+                    <div className="card " onClick={() => navigate('/pdftoimg')}>
                         <div className="  text-center p-3">
                             <i className="fa fa-3x fa-object-ungroup icon-color mb-2"></i>
                             <h5 className="mb-1">PDF To Image</h5>
@@ -141,7 +143,7 @@ function Home() {
 
             </div>
             <HomeFormCard/>
-            <Footer/>
+           
 
             
 
