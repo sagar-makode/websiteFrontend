@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div  style={{ textDecoration: 'none' , marginTop:"30px"}}>
+    <div  style={{ textDecoration: 'none' , marginTop:"px"}}>
 
-      <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#0099ff' }}>
+      <footer className=" text-lg-start text-white" style={{ backgroundColor: '#0099ff' }}>
 
         <div className="container p-4 pb-0">
           <section className="">
